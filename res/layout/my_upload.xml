@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" 
+    >
+    <LinearLayout
+        android:id="@+id/upload_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/back_actionbar" 
+        >
+
+        <ImageButton
+            android:id="@+id/load_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_img" />
+   
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8dp"
+             android:layout_gravity="center"
+             android:text="我的上传"
+             android:textColor="#ffffff"
+             android:textSize="20sp"
+             />
+    </LinearLayout>
+    
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" 
+         android:layout_below="@+id/upload_bar"
+   	     android:background="#eeeeee">
+    <RelativeLayout 
+        android:id="@+id/upload_note_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/essay_background"
+        >
+        
+        <TextView 
+            android:id="@+id/upload_shangchuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"    
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="上传时间"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageButton 
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/upload_tuijian"
+            android:background="@drawable/essay_line"
+            />
+        <TextView 
+            android:id="@+id/upload_tuijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+            android:text="推荐最多"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            />
+        <ImageButton 
+            android:id="@+id/upload_line2"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/upload_tuijian"
+            android:background="@drawable/essay_line"
+            />
+        <TextView 
+            android:id="@+id/upload_share"
+            android:layout_toRightOf="@+id/upload_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分享最多"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="25dp"
+            />   
+    </RelativeLayout>
+
+    
+    <ListView 
+        android:id="@+id/upload_list"
+        android:layout_below="@+id/upload_note_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:divider="#eeeeee"
+        android:dividerHeight="5dp"
+        ></ListView>
+    
+    <Button 
+        android:id="@+id/upload_top_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/up"
+        android:visibility="gone"
+        android:gravity="center"
+        />
+</RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>

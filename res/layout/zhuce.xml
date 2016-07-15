@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/login_back">
+    
+    <ImageView 
+        android:id="@+id/zimg1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_logo"
+        />
+    
+    <TextView 
+        android:id="@+id/zimg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+       	android:textColor="#ffffff"
+        android:text="SHARE"
+       	android:layout_below="@id/zimg1"
+       	android:layout_marginTop="5dp"
+       	android:layout_centerHorizontal="true"
+        
+        />
+    
+    	  
+	<LinearLayout 
+	    android:id="@+id/my_email"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/denglu_style"
+	    android:layout_below="@id/zimg2"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginLeft="35dp"
+	    android:layout_marginRight="35dp"
+		>
+	<ImageView
+		android:id="@+id/email"
+		android:layout_width="45dp"
+		android:layout_height="45dp"
+		android:background="@drawable/email_img"	
+		android:layout_margin="3dp"			
+			/>   
+			
+	<ImageView
+	    android:id="@+id/email_line"
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:background="#358fcb"
+			/>
+	    
+	<EditText
+	    android:id="@+id/edit_email"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="5dp"	
+		android:background="@null"
+			/>
+	    </LinearLayout>
+	    
+	<LinearLayout 
+	    android:id="@+id/zhuce_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/denglu_style"
+	    android:layout_below="@id/my_email"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="35dp"
+	    android:layout_marginRight="35dp"
+		>
+	<ImageView
+		android:id="@+id/zucer"
+		android:layout_width="45dp"
+		android:layout_height="45dp"
+		android:background="@drawable/user_img"	
+		android:layout_margin="3dp"			
+			/>   
+			
+	<ImageView
+	    android:id="@+id/zucer_line"
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:background="#358fcb"
+			/>
+	    
+	<EditText
+	    android:id="@+id/edit_zhuceuser"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="5dp"	
+		android:background="@null"
+			/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	    android:id="@+id/zhucepass_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/denglu_style"
+	    android:layout_below="@id/zhuce_ll"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="35dp"
+	    android:layout_marginRight="35dp"
+		>
+	<ImageView
+		android:id="@+id/zhucepassword"
+		android:layout_width="45dp"
+		android:layout_height="45dp"
+		android:background="@drawable/pass_img"	
+		android:layout_margin="3dp"			
+			/>   
+			
+	<ImageView
+	    android:id="@+id/zhucepassword_line"
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:background="#358fcb"
+			/>
+	    
+	<EditText
+	    android:id="@+id/edit_zhucepassword"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:layout_marginTop="2dp"
+		android:layout_marginLeft="5dp"	
+		android:background="@null"
+		 android:inputType="textPassword"
+			/>
+	    </LinearLayout>
+
+	<Button
+	    android:id="@+id/register"
+	    android:onClick="doclick"
+	    android:layout_below="@id/zhucepass_ll"
+     	android:layout_marginTop="10dp"
+	    android:layout_width="100dp"
+	    android:layout_height="30dp"
+	    android:layout_centerHorizontal="true"
+	    android:text="自动注册"
+	    android:background="@drawable/denglu_style_3"
+	    android:textColor="@android:color/background_light" 
+	    android:textSize="20dp"
+	    
+	    	/>
+
+
+</RelativeLayout>

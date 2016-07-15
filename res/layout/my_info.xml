@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:background="#eeeeee" 
+    >
+   <LinearLayout
+        android:id="@+id/info_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/back_actionbar" 
+        >
+
+        <ImageButton
+            android:id="@+id/info_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_img" />
+   
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8dp"
+             android:layout_gravity="center"
+             android:text="我的信息"
+             android:textColor="#ffffff"
+             android:textSize="20sp"
+             />
+    </LinearLayout>
+    
+    <ScrollView 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@+id/info_bar"
+       >
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+       
+           >
+           <RelativeLayout 
+               android:id="@+id/info_pinglun"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+          	android:background="#ffffff"
+               >
+               <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:gravity="center"
+                   android:layout_marginLeft="25dp"
+                   android:text="评论"
+                   android:textSize="17dp"
+                   />
+               <ImageView 
+                   android:layout_height="20dp"
+                   android:layout_width="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="65dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/my_jiantou"
+                   />
+               <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="45dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="16dp"
+                   android:text="7"
+                   android:textSize="18dp"
+                    android:textColor="#368ecd"
+                   />
+           </RelativeLayout>
+           
+           
+             <RelativeLayout 
+               android:id="@+id/info_tuijian"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp" 
+                android:layout_marginTop="2dp"
+          	android:background="#ffffff"
+               >
+               <TextView 
+               
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:gravity="center"
+                   android:layout_marginLeft="25dp"
+                   android:text="推荐我的"
+                   android:textSize="17dp"
+                   />
+               <ImageView 
+                   android:layout_height="20dp"
+                   android:layout_width="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="65dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/my_jiantou"
+                   />
+                <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="45dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="16dp"
+                   android:text="8"
+                   android:textSize="18dp"
+                    android:textColor="#368ecd"
+                   />
+           </RelativeLayout>
+           
+               <RelativeLayout 
+               android:id="@+id/info_newguanzhu"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+                   android:layout_marginTop="2dp"
+          	android:background="#ffffff"
+               >
+             
+               <TextView 
+               
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:gravity="center"
+                   android:layout_marginLeft="25dp"
+                   android:text="新关注的"
+                   android:textSize="17dp"
+                   />
+               <ImageView 
+                   android:layout_height="20dp"
+                   android:layout_width="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="65dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/my_jiantou"
+                   />
+                <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="45dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="16dp"
+                   android:text="3"
+                   android:textSize="18dp"
+                    android:textColor="#368ecd"
+                   />
+           </RelativeLayout>
+           
+                 <RelativeLayout 
+               android:id="@+id/info_sixin"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+                   android:layout_marginTop="2dp"
+          	android:background="#ffffff"
+               >
+            
+               <TextView 
+                 
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:gravity="center"
+                   android:layout_marginLeft="25dp"
+                   android:text="私信"
+                   android:textSize="17dp"
+                   />
+               <ImageView 
+                   android:layout_height="20dp"
+                   android:layout_width="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="65dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/my_jiantou"
+                   />
+                <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="45dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="16dp"
+                   android:text="4"
+                   android:textSize="18dp"
+                    android:textColor="#368ecd"
+                   />
+           </RelativeLayout>
+           
+                   <RelativeLayout 
+               android:id="@+id/info_tongzhi"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+                   android:layout_marginTop="2dp"
+          	android:background="#ffffff"
+               >
+           
+               <TextView 
+                  
+                   android:layout_width="wrap_content"
+                   android:layout_height="fill_parent"
+                   android:gravity="center"
+                   android:layout_marginLeft="25dp"
+                   android:text="活动通知"
+                   android:textSize="17dp"
+                   />
+               <ImageView 
+                   android:layout_height="20dp"
+                   android:layout_width="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="65dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/my_jiantou"
+                   />
+                <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="45dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="16dp"
+                   android:text="1"
+                   android:textSize="18dp"
+                    android:textColor="#368ecd"
+                   />
+           </RelativeLayout>
+           
+                     
+       </LinearLayout>
+       
+   </ScrollView>
+   
+</RelativeLayout>
